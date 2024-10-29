@@ -1,0 +1,10 @@
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /************* début de la partie modifiée *************************/
+    nav a:hover {
+        border-top: 1px solid var(--main-color) opacity 0;
+        border-bottom: 1px solid var(--main-color);
+        
+    }
+    /************* fin de la partie modifiée *************************/
+}
