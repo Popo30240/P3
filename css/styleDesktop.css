@@ -128,14 +128,15 @@ header {
     display: flex;
     justify-content:space-between;
 }
-/* on change la taille du logo */
+/* on change la taille du logo et on le descend de 15 px */
 header img {
-    height: 19px;
-    width: 61px;
+    height: 20px;
+    width: 60px;
+    padding-top: 15px;
 }
 /* on mets en place un margin left pour séparer les 2 liens */
 nav a {
-    margin-left: 30px;
+    margin-left: 47px;
 }
 /* au survole du pointeur le texte devient bleu et une barre apparait */
 nav a:hover {
