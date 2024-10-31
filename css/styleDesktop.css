@@ -126,7 +126,7 @@ a {
 /* on fait appel au sélecteur header pour mettre en place un espace entre les 2 bloques */
 header { 
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 /* on change la taille du logo et on le descend de 15 px */
 header img {
