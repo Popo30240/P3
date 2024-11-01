@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="./css/stylePhone.css">
     <!-- un fichier style CSS pour les écrans de tablettes -->
     <link rel="stylesheet" href="./css/styleTablet.css">
+    <script
+        src="https://kit.fontawesome.com/4389809c4d.js"
+        crossorigin="anonymous"
+    ></script>
 </head>
 
 <body>
@@ -30,9 +34,56 @@
         </header>
         <main>
             <section class="research">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre-ville ou en pleine nature</p>
-            </section>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <div class="research-bar">
+                  <!--barre de recherche-->
+                  <div class="left-button">
+                    <div class="map-logo">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <form action="POST">
+                      <input
+                        type="text"
+                        id="town"
+                        name="town"
+                        value="Marseille, France"
+                      />
+                    </form>
+                    <div class="research-btn">
+                      <button class="rechercher">Rechercher</button>
+                      <button class="i"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div id="buttons">
+                  <!--Filtres de recherche-->
+                  <div class="content-box">
+                    <p>Filtres</p>
+                    <button class="economique">
+                      <i class="fas fa-money-bill-wave"></i>
+                      Economique
+                    </button>
+                    <button class="familial">
+                      <i class="fas fa-child"></i>
+                      Familial
+                    </button>
+                    <button class="romantique">
+                      <i class="fas fa-heart"></i>
+                      Romantique
+                    </button>
+                    <button class="animaux">
+                      <i class="fas fa-dog"></i>
+                      Animaux autorisés
+                    </button>
+                  </div>
+                </div>
+                <div class="name-bar">
+                  <!--nb de logement dispo-->
+                  <i class="fas fa-info"></i>
+                  <p>Plus de 500 logements sont disponible dans cette ville</p>
+                </div>
+              </section>
             <!-- on englobe la partie hébergement pour la destination de notre lien hypertexte "Hébergements" -->
                 <div class="hebergements-and-populaires">
                     <section id="link-hebergements-a-Marseille" class="hebergements">
