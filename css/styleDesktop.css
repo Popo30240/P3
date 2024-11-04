@@ -3,19 +3,47 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    /* margin: 0; */
+    display: flex;
+    justify-content: center;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+}
+
+/* on change la taille du logo et on le descend de 15 px */
+header img {
+    height: 20px;
+    width: 60px;
+    padding-top: 15px;
+}
+nav {
+    display: flex;
+}
+/* on mets en place un margin left pour séparer les 2 liens */
+nav a {
+    display: flex;
+    margin-left: 47px;
+}
+/* au survole du pointeur le texte devient bleu et une barre apparait */
+nav a:hover {
+    color: var(--blue);
+    border-top: 2px solid var(--blue);
+    padding-top: 5px;
+}
+
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
+    --blue: #0065FC;
+    --grey: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --white:white;
 }
 
 .fa-solid {
-    color: var(--main-color);
-}
-
-body {
-    display: flex;
-    justify-content: center;
+    color: var(--blue);
 }
 
 .main-container {
@@ -55,7 +83,7 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--grey)
 }
 
 /****** Hebergements And Populaires ***********/
@@ -65,7 +93,7 @@ a {
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
+    background-color: var(--grey);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -122,29 +150,59 @@ a {
 }
 
 
-/************* début de la partie modifiée *************************/
-/* on fait appel au sélecteur header pour mettre en place un espace entre les 2 bloques */
-header { 
+.directionRow {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
 }
-/* on change la taille du logo et on le descend de 15 px */
-header img {
-    height: 20px;
-    width: 60px;
-    padding-top: 15px;
+
+.left-button {
+    /* Barre de recherche de ville */
+    margin-bottom: 10px;
 }
-/* on mets en place un margin left pour séparer les 2 liens */
-nav a {
-    margin-left: 47px;
+
+.map-logo {
+    display:flex;
+    background-color: var(--grey);
+    border-radius: 10px 0 0 10px;
+    height: 51px;
+    width: 45px;
+    justify-content: center;
+    align-items: center;   
 }
-/* au survole du pointeur le texte devient bleu et une barre apparait */
-nav a:hover {
-    color: var(--main-color);
-    border-top: 2px solid var(--main-color);
+
+input {
+    height: 45px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: rgba(94, 93, 93, 0.1);
+    /* border-color: var(--grey); */
+    border-width: 1px;
+    text-align: center;
 }
-header nav { 
+
+.research-btn {
+    background-color: var(--blue);
+    border-radius: 0 10px 10px 0;
+
+}
+
+.research-btn .rechercher {
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 0 10px 10px 0;
+    font-weight: bold;
+    height: 40px;
+    border: 0px;
+}
+
+.research-btn .i {
+    display: none;
+    color: var(--white);
 }
 /************* fin de la partie modifiée *************************/
