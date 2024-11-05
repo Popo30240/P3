@@ -3,10 +3,29 @@
     font-family: 'Raleway', sans-serif;
 }
 
+:root {
+    --blue: #0065FC;
+    --grey: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+    --white:white;
+}
+
+.directionRow {
+    display: flex;
+    flex-direction: row;
+}
+
 body {
     /* margin: 0; */
     display: flex;
     justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 header { 
@@ -20,6 +39,7 @@ header img {
     width: 60px;
     padding-top: 15px;
 }
+/* on rend flexible le bloque  */
 nav {
     display: flex;
 }
@@ -27,35 +47,74 @@ nav {
 nav a {
     display: flex;
     margin-left: 47px;
+    align-items: center;
 }
 /* au survole du pointeur le texte devient bleu et une barre apparait */
 nav a:hover {
     color: var(--blue);
     border-top: 2px solid var(--blue);
-    padding-top: 5px;
-}
-
-:root {
-    --blue: #0065FC;
-    --grey: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-    --white:white;
-}
-
-.fa-solid {
-    color: var(--blue);
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+.left-button {
+    /* Barre de recherche de ville */
+    margin-bottom: 10px;
+}
+
+.map-logo {
+    display:flex;
+    background-color: var(--grey);
+    border-radius: 15px 0 0 15px;
+    height: 51px;
+    width: 45px;
+    justify-content: center;
+    align-items: center;   
+}
+
+input {
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    font-weight: bold;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: rgba(94, 93, 93, 0.1);
+    /* border-color: var(--grey); */
+    border-width: 1px;
+    text-align: center;
+}
+
+/* .research-btn {
+    background-color: var(--blue);
+    border-radius: 0 10px 10px 0;
+
+} */
+
+.research-btn .rechercher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    height: 51px;
+    padding: 0px 20px 0px 20px;
+    border: 0px;
+}
+
+.research-btn .i {
+    display: none;
+    color: var(--white);
+}
+
+.fa-solid {
+    color: var(--blue);
 }
 
 .section-title {
@@ -149,60 +208,4 @@ a {
     margin-bottom: 5px;
 }
 
-
-.directionRow {
-    display: flex;
-    flex-direction: row;
-}
-
-.left-button {
-    /* Barre de recherche de ville */
-    margin-bottom: 10px;
-}
-
-.map-logo {
-    display:flex;
-    background-color: var(--grey);
-    border-radius: 10px 0 0 10px;
-    height: 51px;
-    width: 45px;
-    justify-content: center;
-    align-items: center;   
-}
-
-input {
-    height: 45px;
-    padding-left: 10px;
-    padding-bottom: 3px;
-    font-weight: bold;
-    border-left-style: none;
-    border-right-style: none;
-    border-color: rgba(94, 93, 93, 0.1);
-    /* border-color: var(--grey); */
-    border-width: 1px;
-    text-align: center;
-}
-
-.research-btn {
-    background-color: var(--blue);
-    border-radius: 0 10px 10px 0;
-
-}
-
-.research-btn .rechercher {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--blue);
-    color: var(--white);
-    border-radius: 0 10px 10px 0;
-    font-weight: bold;
-    height: 40px;
-    border: 0px;
-}
-
-.research-btn .i {
-    display: none;
-    color: var(--white);
-}
 /************* fin de la partie modifiée *************************/

@@ -1,19 +1,47 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /************* début de la partie modifiée *************************/
-    main .hebergements-and-populaires {
-        flex-direction: column-reverse;
+    body .main-container { 
+        padding: 0;
     }
+    .main-container header { 
+        flex-direction: column; 
+    }
+    /* header nav {
+        justify-items: center;
+        text-align: center;
+    } */
     nav a:hover {
         border-top: 2px solid var(--blue) opacity 0;
         border-bottom: 2px solid var(--blue);  
     }
-    .main-container header { 
-        flex-direction: column; 
-        align-items: center;    
+    .research-bar .left-button {
+        justify-content: center;
     }
-    body .main-container { 
-        padding: 0;
+    form {
+        width: 169px;
+        padding-right: 56px;
+    }
+    .research-bar input {
+        padding-right: 70px;
+    }
+    .research-btn .rechercher {
+        display: none;
+    }
+    .research-bar .research-btn .i {
+        display: contents;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blue);
+        border-radius: 15px;
+        font-weight: bold;
+        height: 51px;
+        padding: 0px 20px 0px 20px;
+        border: 0px;
+    }
+    main .hebergements-and-populaires {
+        flex-direction: column-reverse;
     }
     .hebergements-and-populaires .hebergements { 
         background-color: white;
