@@ -32,7 +32,6 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
 /* on change la taille du logo et on le descend de 15 px */
 header img {
     height: 20px;
@@ -60,9 +59,16 @@ a {
     text-decoration: none;
 }
 
+/******************** bonton recherche ********************************/
 .left-button {
     /* Barre de recherche de ville */
     margin-bottom: 10px;
+}
+
+.left-button input,
+i,
+button {
+    font-weight: bold;
 }
 
 .map-logo {
@@ -80,7 +86,7 @@ input {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 3px;
-    font-weight: bold;
+    /* font-weight: bold; */
     border-left-style: none;
     border-right-style: none;
     border-color: rgba(94, 93, 93, 0.1);
@@ -89,12 +95,6 @@ input {
     text-align: center;
 }
 
-/* .research-btn {
-    background-color: var(--blue);
-    border-radius: 0 10px 10px 0;
-
-} */
-
 .research-btn .rechercher {
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@ input {
     background-color: var(--blue);
     color: var(--white);
     border-radius: 0 15px 15px 0;
-    font-weight: bold;
+    /* font-weight: bold; */
     height: 51px;
     padding: 0px 20px 0px 20px;
     border: 0px;
@@ -113,8 +113,98 @@ input {
     color: var(--white);
 }
 
+/******************** boutons filtre ************************/
+.buttons p {
+    font-weight: bold;
+}
+
+
+.content-box p,
+ button {
+    font-weight: bold;
+}
+
+.smallButton {
+	/* margin: 20px 0px;
+	padding: 28px 40px; */
+    height: 45px;
+    width: 185px;
+
+	background-color: white;
+
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+
+	/* box-sizing: border-box; */
+
+	/* font-weight: 600;
+	font-size: 16px;
+	line-height: 17px; */
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	text-decoration: none;
+}
+
+.Button {
+	/* margin: 20px 0px;
+	padding: 28px 40px; */
+    height: 45px;
+    width: 295px;
+
+	background-color: white;
+
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+
+	/* box-sizing: border-box; */
+
+	/* font-weight: 600;
+	font-size: 16px;
+	line-height: 17px; */
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	text-decoration: none;
+}
+
+.name-bar div {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+
+    border-style: solid;
+	border-width: 2px;
+	border-radius: 50% 50% 50% 50%;
+
+    border-color: var(--grey);
+
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+}
+
+.logo-info i {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+
+    height: 1px;
+    width: 1px;
+}
+
 .fa-solid {
     color: var(--blue);
+}
+
+.fa-solidWhite {
+    color: var(--white);
 }
 
 .section-title {
@@ -207,5 +297,3 @@ input {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-/************* fin de la partie modifiée *************************/
