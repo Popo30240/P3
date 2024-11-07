@@ -23,10 +23,10 @@
     .research-bar .left-button {
         justify-content: center;
     }
-    form {
+    /* form {
         width: 169px;
         padding-right: 56px;
-    }
+    } */
     .research-bar input {
         padding-right: 70px;
     }

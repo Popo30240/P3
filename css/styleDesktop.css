@@ -3,6 +3,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+* {
+    margin: 0;
+}
+
 :root {
     --blue: #0065FC;
     --grey: #F2F2F2;
@@ -13,6 +17,12 @@
 .directionRow {
     display: flex;
     flex-direction: row;
+}
+
+.directionRowAndBaseline {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
 body {
@@ -31,9 +41,13 @@ body {
 header { 
     display: flex;
     justify-content: space-between;
+    /* height: 79px; */
+}
+.logo {
+    margin-top: 16px;
 }
 /* on change la taille du logo et on le descend de 15 px */
-header img {
+.logo img {
     height: 20px;
     width: 60px;
     padding-top: 15px;
@@ -41,22 +55,27 @@ header img {
 /* on rend flexible le bloque  */
 nav {
     display: flex;
+    align-items: center;
 }
-/* .linkBox ul {
+
+.linkBox ul {
     display:flex;
-}  */
-/* .linkBox li {
+} 
+.linkBox li {
+    display:flex;
     list-style: none;
+    align-items: center;
+    
+}
+header li a {
+    margin-left: 47px;
+}
+/* on mets en place un margin left pour séparer les 2 liens */
+/* nav a {
     margin-left: 47px;
     align-items: center;
     flex: 1;
 } */
-/* on mets en place un margin left pour séparer les 2 liens */
-nav a {
-    margin-left: 47px;
-    align-items: center;
-    flex: 1;
-}
 /* au survole du pointeur le texte devient bleu et une barre apparait */
 nav a:hover {
     color: var(--blue);
@@ -70,11 +89,7 @@ a {
 
 /******************** bonton recherche ********************************/
 /* Barre de recherche de ville */
-.left-button {
-    height: 49px;
-    width: 377px;
-    margin-bottom: 10px;
-}
+
 /*On définit la taille et le gras du texte*/
 .map-logo {
     display:flex;
@@ -93,7 +108,7 @@ a {
 
 input {
     height: 45px;
-    width: 196px;
+    /* width: 196px; */
     border-left-style: none;
     border-right-style: none;
     border-color: rgba(94, 93, 93, 0.1);
@@ -101,7 +116,9 @@ input {
     border-width: 1px;
     text-align: center;
 }
-
+/* .research-bar {
+    width: 377px;
+} */
 .research-btn .rechercher {
     display: flex;
     justify-content: center;
@@ -133,6 +150,10 @@ input {
 
 .content-box button, p {
     margin-right: 15px;
+}
+
+.content-box i {
+    padding-right: 5px;
 }
 
 .smallButton {
@@ -213,6 +234,7 @@ input {
     height: 1px;
     width: 1px;
 }
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
