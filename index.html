@@ -26,8 +26,12 @@
                 <img src="./images/logo/Booki.png" alt="Image du logo de la socièté Booki"> 
             </div>
             <nav>
-                <a href="#link-hebergements-a-Marseille">Hébergements</a>
-                <a href="#activites">Activités</a>
+                <!-- <ul class="linkBox">
+                    <li> -->
+                        <a href="#link-hebergements-a-Marseille">Hébergements</a>
+                        <a href="#activites">Activités</a>
+                    <!-- </li>
+                </ul> -->
             </nav>
         </header>
         <main>
@@ -38,11 +42,10 @@
                 <div class="research-bar">
                   <!--barre de recherche-->
                   <div class="left-button directionRow"> 
-                    <!-- taille du bouton 51px H 335px L -->
                     <div class="map-logo">
                       <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <form action="POST">
+                    <form method="get" action="" class="inputText">
                       <input
                         type="text"
                         id="town"
@@ -59,9 +62,8 @@
 
                 <div class="buttons">
                     <!--Filtres de recherche-->
-                    <p>Filtres</p>
                     <div class="content-box directionRow">
-                      
+                    <p>Filtres</p>
                       <button class="bigButton economique">
                         <i class="fa-solid fas fa-money-bill-wave"></i>
                         Economique

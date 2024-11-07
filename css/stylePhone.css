@@ -34,7 +34,6 @@
         display: none;
     }
     .research-bar .research-btn .i {
-        display: contents;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -44,6 +43,14 @@
         height: 51px;
         padding: 0px 20px 0px 20px;
         border: 0px;
+    }
+    body .main-container .content-box button {
+        height: 51px;
+        width: 185px;
+        margin: 0px;
+    }
+    body .main-container .content-box {
+        flex-wrap: wrap;
     }
     main .hebergements-and-populaires {
         flex-direction: column-reverse;

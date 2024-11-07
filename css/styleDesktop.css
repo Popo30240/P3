@@ -42,11 +42,20 @@ header img {
 nav {
     display: flex;
 }
-/* on mets en place un margin left pour séparer les 2 liens */
-nav a {
-    display: flex;
+/* .linkBox ul {
+    display:flex;
+}  */
+/* .linkBox li {
+    list-style: none;
     margin-left: 47px;
     align-items: center;
+    flex: 1;
+} */
+/* on mets en place un margin left pour séparer les 2 liens */
+nav a {
+    margin-left: 47px;
+    align-items: center;
+    flex: 1;
 }
 /* au survole du pointeur le texte devient bleu et une barre apparait */
 nav a:hover {
@@ -60,34 +69,31 @@ a {
 }
 
 /******************** bonton recherche ********************************/
+/* Barre de recherche de ville */
 .left-button {
-    /* Barre de recherche de ville */
+    height: 49px;
+    width: 377px;
     margin-bottom: 10px;
 }
-
-.left-button input,
-i,
-button {
-    font-size: 20px;
-    font-weight: bold;
-}
-
+/*On définit la taille et le gras du texte*/
 .map-logo {
     display:flex;
     background-color: var(--grey);
     border-radius: 15px 0 0 15px;
-    height: 51px;
-    width: 45px;
+    height: 49px;
+    width: 50px;
     justify-content: center;
     align-items: center;   
+}
+/* On change la taille du logo dans ma-logo */
+.map-logo i {
+    height: 18px;
+    width: 14px;
 }
 
 input {
     height: 45px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    /* font-weight: bold; */
+    width: 196px;
     border-left-style: none;
     border-right-style: none;
     border-color: rgba(94, 93, 93, 0.1);
@@ -103,9 +109,8 @@ input {
     background-color: var(--blue);
     color: var(--white);
     border-radius: 0 15px 15px 0;
-    /* font-weight: bold; */
-    height: 51px;
-    padding: 0px 20px 0px 20px;
+    height: 49px;
+    /* padding: 0px 20px 0px 20px; */
     border: 0px;
 }
 
@@ -115,30 +120,26 @@ input {
 }
 
 /******************** boutons filtre ************************/
-.buttons p {
+.research-bar input, button {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .content-box p,
  button {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
 }
 
-.content-box button {
-    margin-right: 30px;
-}
-
-.content-box i {
-    margin-right: 30px;
+.content-box button, p {
+    margin-right: 15px;
 }
 
 .smallButton {
 	/* margin: 20px 0px;
 	padding: 28px 40px; */
-    height: 51px;
-    width: 185px;
+    height: 50px;
+    width: 134px;
 
 	background-color: white;
 
@@ -164,8 +165,8 @@ input {
 .bigButton {
 	/* margin: 20px 0px;
 	padding: 28px 40px; */
-    height: 51px;
-    width: 295px;
+    height: 50px;
+    width: 173px;
 
 	background-color: white;
 
@@ -211,42 +212,6 @@ input {
 
     height: 1px;
     width: 1px;
-}
-
-.fa-solid {
-    color: var(--blue);
-}
-
-.fa-solidWhite {
-    color: var(--white);
-}
-
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--grey)
 }
 
 /****** Hebergements And Populaires ***********/
@@ -310,4 +275,40 @@ input {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+.fa-solid {
+    color: var(--blue);
+}
+
+.fa-solidWhite {
+    color: var(--white);
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--grey)
 }
