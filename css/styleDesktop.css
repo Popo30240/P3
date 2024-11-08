@@ -5,6 +5,7 @@
 
 * {
     margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -26,7 +27,6 @@
 }
 
 body {
-    /* margin: 0; */
     display: flex;
     justify-content: center;
 }
@@ -43,9 +43,11 @@ header {
     justify-content: space-between;
     /* height: 79px; */
 }
+
 .logo {
     margin-top: 16px;
 }
+
 /* on change la taille du logo et on le descend de 15 px */
 .logo img {
     height: 20px;
@@ -58,17 +60,14 @@ nav {
     align-items: center;
 }
 
-.linkBox ul {
-    display:flex;
-} 
 .linkBox li {
-    display:flex;
+    /* display:flex; */
     list-style: none;
-    align-items: center;
-    
 }
-header li a {
+
+.linkBox a {
     margin-left: 47px;
+    padding: 16px 0;
 }
 /* on mets en place un margin left pour séparer les 2 liens */
 /* nav a {
@@ -89,7 +88,9 @@ a {
 
 /******************** bonton recherche ********************************/
 /* Barre de recherche de ville */
-
+.left-button {
+    width: 377;
+}
 /*On définit la taille et le gras du texte*/
 .map-logo {
     display:flex;
@@ -116,9 +117,7 @@ input {
     border-width: 1px;
     text-align: center;
 }
-/* .research-bar {
-    width: 377px;
-} */
+
 .research-btn .rechercher {
     display: flex;
     justify-content: center;
