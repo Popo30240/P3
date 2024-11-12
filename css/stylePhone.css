@@ -11,10 +11,15 @@
         display: flex;
         justify-content: center;
     }
-    nav a {
-        padding: 0 15px;
+    .linkBox li {
+        
     }
-    nav a:hover {
+    header .linkBox a {
+        margin: 0;
+        flex:1;
+        justify-content: center;     
+    }
+    .linkBox a:hover {
         border-top: 2px solid var(--blue) opacity 0;
         border-bottom: 2px solid var(--blue);  
     }

@@ -41,7 +41,7 @@ body {
 header { 
     display: flex;
     justify-content: space-between;
-    /* height: 79px; */
+    width: 100%;
 }
 
 .logo {
@@ -54,27 +54,18 @@ header {
     width: 60px;
     padding-top: 15px;
 }
-/* on rend flexible le bloque  */
-nav {
-    display: flex;
-    align-items: center;
-}
 
 .linkBox li {
-    /* display:flex; */
+    display:flex;
     list-style: none;
 }
 
 .linkBox a {
+    display:flex;
     margin-left: 47px;
     padding: 16px 0;
 }
-/* on mets en place un margin left pour séparer les 2 liens */
-/* nav a {
-    margin-left: 47px;
-    align-items: center;
-    flex: 1;
-} */
+
 /* au survole du pointeur le texte devient bleu et une barre apparait */
 nav a:hover {
     color: var(--blue);
@@ -116,6 +107,7 @@ input {
     /* border-color: var(--grey); */
     border-width: 1px;
     text-align: center;
+    padding: 1px 2px 1px 2px;
 }
 
 .research-btn .rechercher {
@@ -126,7 +118,7 @@ input {
     color: var(--white);
     border-radius: 0 15px 15px 0;
     height: 49px;
-    /* padding: 0px 20px 0px 20px; */
+    padding: 0px 20px 0px 20px;
     border: 0px;
 }
 
